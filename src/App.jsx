@@ -37,8 +37,10 @@ export default App*/
 import React, { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar";
 import RecipeCard from "./components/RecipeCard";
+import NavBar  from "./components/NavBar";
 
 function App() {
+
   const [recipes, setRecipes] = useState([]);
   const [query, setQuery] = useState("chicken");
 
@@ -59,7 +61,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white transition-all">
+  <>
+  <NavBar />
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white m-8 transition-all">
       <h1 className="text-4xl font-bold text-center pt-8">🍳 Recipe Finder</h1>
       <SearchBar setQuery={setQuery} />
       <div className="grid gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -70,6 +74,8 @@ function App() {
         )}
       </div>
     </div>
+   </>
+ 
   );
 }
 
