@@ -2,24 +2,24 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-orange-600/90 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="text-2xl font-bold text-green-600">
+        <a href="/" className="text-2xl font-bold text-white">
           RecipeFinder
         </a>
 
         {/* Nav Links */}
-        <ul className="hidden md:flex space-x-6 text-gray-700 font-medium py-1 px-3">
-          <li><a href="#home" className="hover:text-green-600 ">Home</a></li>
-          <li><a href="#recipes" className="hover:text-green-600">Recipes</a></li>
+        <ul className="hidden md:flex space-x-6 text-white font-medium py-1 px-3">
+          <li><a href="#home" className="hover:text-green-600 ">Recipes</a></li>
+          <li><a href="#recipes" className="hover:text-green-600">Quick & Easy</a></li>
           <li><a href="#about" className="hover:text-green-600">About</a></li>
           <li><a href="#contact" className="hover:text-green-600">Contact</a></li>
           </ul>
           {/*buttons*/}
           <div className="flex space-x-3">
-        <button className="bg-green-400 text-white py-1 px-3 rounded">Login</button>
-          <button className="bg-green-900 text-white py-1 px-3 rounded">SignUp</button>
+        <button className="bg-transparent text-white py-1 px-3 rounded border-2">Login</button>
+          <button className="bg-green-900 text-white py-1 px-3 rounded border-2">SignUp</button>
      </div>
 
         {/* Mobile Menu Button */}
