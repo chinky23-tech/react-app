@@ -63,7 +63,7 @@ function App() {
   return (
   <>
   <NavBar />
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white m-8 transition-all">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white m-14 transition-all">
       <h1 className="text-4xl font-bold text-center pt-8">🍳 Recipe Finder</h1>
       <SearchBar setQuery={setQuery} />
       <div className="grid gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
