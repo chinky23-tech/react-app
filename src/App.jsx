@@ -34,10 +34,11 @@ function App() {
 
 export default App*/
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar";
 import RecipeCard from "./components/RecipeCard";
 import NavBar  from "./components/NavBar";
+import Home from "./pages/Home.jsx";
 
 function App() {
 
