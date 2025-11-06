@@ -11,7 +11,7 @@ const NavBar = () => {
 
         {/* Nav Links */}
         <ul className="hidden md:flex space-x-6 text-white font-medium py-1 px-3">
-          <li><a href="#home" className="hover:text-green-600 ">Recipes</a></li>
+          <li><a href="#home" className="hover:text-green-600 ">Home</a></li>
           <li><a href="#recipes" className="hover:text-green-600">Quick & Easy</a></li>
           <li><a href="#about" className="hover:text-green-600">About</a></li>
           <li><a href="#contact" className="hover:text-green-600">Contact</a></li>
