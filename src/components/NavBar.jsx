@@ -34,7 +34,7 @@ Log In
 Sign In
 </span>
 </button>  
-
+<button className="green">get started</button>
   </div>
 
 
