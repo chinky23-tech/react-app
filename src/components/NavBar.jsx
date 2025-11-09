@@ -18,22 +18,9 @@ const NavBar = () => {
           </ul>
           {/*buttons*/}
           <div className="flex space-x-3">
-        {/*<button className="bg-transparent text-white py-1 px-3 rounded border-2">Login</button>
-          <button className="bg-green-900 text-white py-1 px-3 rounded border-2">SignUp</button>*/}
-   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 
-   overflow-hidden text-sm font-medium  rounded-lg  bg-linear-to-br from-teal-400 to-lime-100 text-white 
-    focus:outline-none">
-<span className="relative px-5 py-2.5 transition-all ease-in duration-75  dark:bg-orange-600 rounded-md ">
-Log In
-</span>
-</button>  
- <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 
-   overflow-hidden text-sm font-medium  rounded-lg  bg-linear-to-br from-teal-400 to-lime-100 text-white 
-    focus:outline-none">
-<span className="relative px-5 py-2.5 transition-all ease-in duration-75  dark:bg-teal-600 rounded-md ">
-Sign In
-</span>
-</button>  
+        <button className="bg-transparent text-orange py-1 px-3 rounded border-2">Login</button>
+          <button className="bg-green-900 text-white py-1 px-3 rounded border-2">SignUp</button>
+
 
   </div>
 
