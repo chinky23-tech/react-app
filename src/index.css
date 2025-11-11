@@ -57,6 +57,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 */
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -74,3 +75,17 @@ button:focus-visible {
 }
 
 
+@keyframes slide-down {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.4s ease-out;
+}

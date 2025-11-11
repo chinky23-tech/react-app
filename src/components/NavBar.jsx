@@ -42,27 +42,30 @@ const NavBar = () => {
       {/* Mobile Menu */}
 {isOpen && (
   <div
-    className={`md:hidden bg-white shadow-lg border-t border-gray-100 transition-all duration-300 ease-in-out overflow-hidden ${
-      isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+    className={`md:hidden bg-white shadow-lg border-t border-gray-100 rounded-b-2xl transform transition-all duration-500 ease-in-out origin-top ${
+      isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
     }`}
   >
-    <ul className="flex flex-col space-y-4 py-4 px-6 font-medium">
+    {/* Nav Links */}
+    <ul className="flex flex-col items-start space-y-4 py-4 px-6 font-medium animate-slide-down">
       <li><a href="#home" className="hover:text-green-600">Home</a></li>
       <li><a href="#recipes" className="hover:text-green-600">Quick & Easy</a></li>
       <li><a href="#about" className="hover:text-green-600">About</a></li>
       <li><a href="#contact" className="hover:text-green-600">Contact</a></li>
     </ul>
 
-    <div className="flex flex-col space-y-3 px-6 pb-4">
-      <button className="bg-transparent border-2 border-orange-500 text-orange-500 py-1 px-3 rounded hover:bg-orange-500 hover:text-white transition">
+    {/* Buttons */}
+    <div className="flex items-start space-x-3 px-6 pb-4">
+      <button className="bg-transparent border-2 border-orange-500 text-orange-500 py-1 px-4 rounded hover:bg-orange-500 hover:text-white transition">
         Login
       </button>
-      <button className="bg-green-700 text-white py-1 px-3 rounded border-2 border-green-700 hover:bg-green-800 transition">
+      <button className="bg-green-700 text-white py-1 px-4 rounded border-2 border-green-700 hover:bg-green-800 transition">
         Sign Up
       </button>
     </div>
   </div>
 )}
+
 
 
   
