@@ -1,13 +1,13 @@
-import React from "react";
+/*import React from "react";
 import { motion } from "framer-motion";
-import heroImage from "../assets/meal.jpg"; // ← add your image in /src/assets/
+import heroImage from "../assets/bg.png"; // ← add your image in /src/assets/
 
 const HeroSection = () => {
   return (
-    <section className="bg-orange-50  fixed min-h-screen m-10 mx-auto left-0 w-full z-50 px-8 md:px-20">
+    <section className="relative flex items-center justify-start min-h-screen bg-orange-50 bg-cover bg-center px-8 md:px-20">
       <div className="w-full max-w-7xl flex flex-col-reverse md:flex-row items-center">
-        {/* Left Text Section */}
-        <motion.div
+        {/* Left Text Section */
+      /*</div> <motion.div
           className="md:w-1/2 text-center md:text-left space-y-6"
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
@@ -29,8 +29,8 @@ const HeroSection = () => {
           </motion.button>
         </motion.div>
 
-        {/* Right Image Section */}
-        <motion.div
+        {/* Right Image Section */
+       /* <motion.div
           className="md:w-1/2 mb-10 md:mb-0 flex justify-center"
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
@@ -51,3 +51,45 @@ const HeroSection = () => {
 
 export default HeroSection;
 
+*/
+import React from "react";
+
+const HeroSection = () => {
+  return (
+    <section className="w-full min-h-screen bg-orange-50 pt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+      
+      {/* LEFT SIDE — Text Content with Mask */}
+      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-r from-orange-50 via-orange-50/65 to-transparent">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
+          Taste the <span className="text-green-700">Joy of Cooking</span> 🍲
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-md">
+          Explore mouthwatering recipes that turn your ingredients into magic —
+          quick, easy, and delicious!
+        </p>
+
+        <div className="flex flex-wrap gap-4">
+          <button className="bg-green-700 text-white py-3 px-6 rounded-full font-semibold hover:bg-green-800 transition-all shadow-md hover:shadow-lg">
+            Get Started
+          </button>
+          <button className="border-2 border-orange-500 text-orange-500 py-3 px-6 rounded-full font-semibold hover:bg-orange-500 hover:text-white transition-all shadow-md hover:shadow-lg">
+            Explore Recipes
+          </button>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE — Food Image */}
+      <div className="relative md:w-1/2 w-full h-[40vh] md:h-screen">
+        <img
+          src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+          alt="Delicious Meal"
+          className="w-full h-full object-cover"
+        />
+        {/* Optional gradient fade to blend image with text area */}
+        <div className="absolute inset-0 bg-linear-to-l from-transparent via-orange-50/50 to-orange-50"></div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
