@@ -59,7 +59,7 @@ const HeroSection = () => {
     <section className="w-full min-h-screen bg-orange-50 pt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
       
       {/* LEFT SIDE — Text Content with Mask */}
-      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-r from-orange-50 via-orange-50/65 to-transparent">
+      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-gradientr-to-r from-orange-50 via-orange-50/95 to-transparent">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
           Taste the <span className="text-green-700">Joy of Cooking</span> 🍲
         </h1>
