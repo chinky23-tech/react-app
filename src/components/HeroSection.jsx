@@ -102,7 +102,7 @@ import mealImage from "../assets/food1.jpeg";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen bg-orange-50 pt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+    <section className="relative w-full h-screen bg-orange-50 pt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
       
       {/* BACKGROUND IMAGE (visible only on mobile for blending) */}
       <img
