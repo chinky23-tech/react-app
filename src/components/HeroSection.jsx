@@ -52,14 +52,15 @@ const HeroSection = () => {
 export default HeroSection;
 
 */
-import React from "react";
 
+/*import React from "react";
+import mealImage from "../assets/food1.jpeg"
 const HeroSection = () => {
   return (
     <section className="w-full min-h-screen bg-orange-50 pt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
       
-      {/* LEFT SIDE — Text Content with Mask */}
-      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-gradientr-to-r from-orange-50 via-orange-50/95 to-transparent">
+      
+      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-l from-orange-100 via-orange-100 to-transparent">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
           Taste the <span className="text-green-700">Joy of Cooking</span> 🍲
         </h1>
@@ -78,15 +79,70 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* RIGHT SIDE — Food Image */}
+      
       <div className="relative md:w-1/2 w-full h-[40vh] md:h-screen">
         <img
-          src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+          src={mealImage}
+          
           alt="Delicious Meal"
           className="w-full h-full object-cover"
         />
-        {/* Optional gradient fade to blend image with text area */}
-        <div className="absolute inset-0 bg-linear-to-l from-transparent via-orange-50/50 to-orange-50"></div>
+        {/* Optional gradient fade to blend image with text area 
+        <div className="absolute inset-0 bg-linear-to-l from-transparent via-orange-50/50 to-orange-100"></div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
+
+*/
+import React from "react";
+import mealImage from "../assets/food1.jpeg";
+
+const HeroSection = () => {
+  return (
+    <section className="relative w-full min-h-screen bg-orange-50 pt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+      
+      {/* BACKGROUND IMAGE (visible only on mobile for blending) */}
+      <img
+        src={mealImage}
+        alt="Delicious Meal"
+        className="absolute inset-0 w-full h-full object-cover md:hidden"
+      />
+      
+      {/* Gradient overlay for mobile */}
+      <div className="absolute inset-0 bg-linear-to-b from-orange-50/90 via-orange-50/70 to-transparent md:hidden"></div>
+
+      {/* LEFT SIDE — Text */}
+      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-l md:from-orange-100 md:via-orange-100 md:to-transparent">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
+          Taste the <span className="text-green-700">Joy of Cooking</span> &#x1F372;
+
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-md">
+          Explore mouthwatering recipes that turn your ingredients into magic —
+          quick, easy, and delicious!
+        </p>
+
+        <div className="flex flex-wrap gap-4">
+          <button className="bg-green-700 text-white py-3 px-6 rounded-full font-semibold hover:bg-green-800 transition-all shadow-md hover:shadow-lg">
+            Get Started
+          </button>
+          <button className="border-2 border-orange-500 text-orange-500 py-3 px-6 rounded-full font-semibold hover:bg-orange-500 hover:text-white transition-all shadow-md hover:shadow-lg">
+            Explore Recipes
+          </button>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE — Image (desktop only) */}
+      <div className="relative hidden md:block md:w-1/2 h-screen">
+        <img
+          src={mealImage}
+          alt="Delicious Meal"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-linear-to-l from-transparent via-orange-50/50 to-orange-100"></div>
       </div>
     </section>
   );
