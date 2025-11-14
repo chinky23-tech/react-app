@@ -45,7 +45,7 @@ const NavBar = () => {
       {/* Mobile Menu */}
 {isOpen && (
   <div
-    className={`md:hidden bg-white shadow-lg border-t border-gray-100 rounded-b-2xl transform transition-all duration-500 ease-in-out origin-top ${
+    className={`md:hidden bg-orange-50 shadow-lg border-t border-gray-100 rounded-2xl transform transition-all duration-500 ease-in-out origin-top ${
       isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
     }`}
   >
@@ -69,12 +69,7 @@ const NavBar = () => {
   </div>
 )}
 
-
-
-  
-    
-
-    </nav>
+</nav>
   );
 };
 

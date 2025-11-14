@@ -118,7 +118,7 @@ const HeroSection = () => {
       <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-l md:from-orange-100 md:via-orange-100 md:to-transparent pt-28 md:pt-0">
   
 
-       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
+       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-3 leading-tight drop-shadow-sm">
           Taste the <span className="text-green-700 ">Joy of Cooking</span>
        <span className="hidden md:inline"> &#x1F372;</span>
         </h1>
