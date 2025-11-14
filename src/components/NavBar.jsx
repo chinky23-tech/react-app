@@ -5,8 +5,8 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   /* <nav className="bg-orange-50 text-orange-500 fixed top-0 left-0 w-full z-50 p-2">*/
-   <nav className="fixed top-0 left-0 w-full z-50 bg-orange-50/40 backdrop-blur-md shadow-sm transition-all duration-300">
+
+   <nav className="fixed top-0 left-0 w-full z-50 bg-orange-50/40 backdrop-blur-md shadow-sm transition-all duration-300 py-1">
 
 
       <div className="container mx-auto px-5 py-3 flex justify-between items-center">

@@ -112,18 +112,20 @@ const HeroSection = () => {
       />
       
       {/* Gradient overlay for mobile */}
-      <div className="absolute inset-0 bg-linear-to-b from-orange-50/90 via-orange-50/70 to-transparent md:hidden"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-orange-50/90 via-orange-50/80 to-transparent md:hidden "></div>
 
       {/* LEFT SIDE — Text */}
-      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-l md:from-orange-100 md:via-orange-100 md:to-transparent">
-       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
-          Taste the <span className="text-green-700">Joy of Cooking</span> &#x1F372;
+      <div className="relative md:w-1/2 w-full h-[60vh] md:h-screen flex flex-col justify-center px-8 sm:px-12 z-10 bg-linear-to-l md:from-orange-100 md:via-orange-100 md:to-transparent pt-28 md:pt-0">
+  
 
+       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 mb-4 leading-tight drop-shadow-sm">
+          Taste the <span className="text-green-700 ">Joy of Cooking</span>
+       <span className="hidden md:inline"> &#x1F372;</span>
         </h1>
 
 
         <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-md">
-          Explore mouthwatering recipes that turn your ingredients into magic —
+          Explore mouthwatering recipes that turn your ingredients into magic — 
           quick, easy, and delicious!
         </p>
 
