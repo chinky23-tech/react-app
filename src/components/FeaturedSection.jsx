@@ -7,7 +7,7 @@ const recipes = [
     title: "Creamy Garlic Pasta",
     time: "20 min",
     healthy: "450 kcal",
-    image: "/food/pasta.jpg",
+    image: "/food/mac & cheese.webp",
     difficulty: "Easy",
   },
   {
@@ -15,7 +15,7 @@ const recipes = [
     title: "Grilled Chicken Bowl",
     time: "30 min",
     healthy: "520 kcal",
-    image: "/food/chicken.jpg",
+    image: "/food/meal.jpg",
     difficulty: "Medium",
   },
   {
@@ -52,6 +52,7 @@ const FeaturedSection = () => {
             key={recipe._id}
             className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition hover:-translate-y-1"
           >
+        
             <div className="w-full h-48 overflow-hidden">
               <img
                 src={recipe.image}
@@ -73,11 +74,16 @@ const FeaturedSection = () => {
                 </span>
               </div>
 
-              <button className="w-full mt-5 bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition">
+            {/* <button className="w-full mt-5 bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition">*/}
+         <div className="mt-5 mb-0">
+            <button className="w-full bg-orange-600 text-white py-2  hover:bg-orange-700 transition rounded-b-2xl">
+
                 View Recipe
               </button>
+              </div>
+              </div>
             </div>
-          </div>
+         
         ))}
       </div>
     </section>
