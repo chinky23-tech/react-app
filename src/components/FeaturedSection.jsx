@@ -73,7 +73,7 @@ const FeaturedSection = () => {
                   {recipe.difficulty}
                 </span>
               </div>
-
+</div>
             {/* <button className="w-full mt-5 bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition">*/}
         
             <button className="w-full mt-5 bg-orange-600 text-white py-3 hover:bg-orange-700 transition rounded-b-2xl">
@@ -81,8 +81,8 @@ const FeaturedSection = () => {
                 View Recipe
               </button>
               </div>
-              </div>
-    
+             
+
         
         ))}
       </div>
