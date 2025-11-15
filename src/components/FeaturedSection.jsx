@@ -50,7 +50,7 @@ const FeaturedSection = () => {
         {recipes.map((recipe) => (
           <div
             key={recipe._id}
-            className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition hover:-translate-y-1"
+            className="bg-white  shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition hover:-translate-y-1"
           >
         
             <div className="w-full h-48 overflow-hidden">
@@ -61,7 +61,7 @@ const FeaturedSection = () => {
               />
             </div>
 
-            <div className="p-5">
+            <div className="p-5 ">
               <h3 className="text-xl font-semibold text-orange-600">
                 {recipe.title}
               </h3>
@@ -75,15 +75,15 @@ const FeaturedSection = () => {
               </div>
 
             {/* <button className="w-full mt-5 bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition">*/}
-         <div className="mt-5 mb-0">
-            <button className="w-full bg-orange-600 text-white py-2  hover:bg-orange-700 transition rounded-b-2xl">
+        
+            <button className="w-full mt-5 bg-orange-600 text-white py-3 hover:bg-orange-700 transition rounded-b-2xl">
 
                 View Recipe
               </button>
               </div>
               </div>
-            </div>
-         
+    
+        
         ))}
       </div>
     </section>
