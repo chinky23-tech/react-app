@@ -39,13 +39,14 @@ import { useState, useEffect } from "react";
 import NavBar  from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import FeaturedSection  from "./components/FeaturedSection";
-
+import Card from "./components/Card";
 function App() {
 return(
   <>
   <NavBar />
   <HeroSection />
   <FeaturedSection />
+  <Card />
    </>
 );
 
