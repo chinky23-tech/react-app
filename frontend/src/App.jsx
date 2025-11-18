@@ -34,7 +34,7 @@ function App() {
 
 export default App*/
 
-import { useState, useEffect } from "react";
+/*import { useState, useEffect } from "react";
 
 import NavBar  from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
@@ -50,6 +50,34 @@ return(
    </>
 );
 
+}
+
+export default App;
+*/
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import WebDev from "./pages/WebDev";
+import UIUX from "./pages/UIUX";
+import Contact from "./pages/Contact";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/web" element={<WebDev />} />
+        <Route path="/services/uiux" element={<UIUX />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
