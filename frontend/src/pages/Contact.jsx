@@ -253,7 +253,7 @@ const ContactPage = () => {
 
             {/* social links */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h4 className="text-2xl font-bold text-gray-800 mb-4">Follow Us</h4>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Follow Us</h4>
               <p className="text-gray-600 mb-4">
                 Stay connected with Global Solutions for the latest updates and insights.
               </p>
