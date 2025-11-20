@@ -174,7 +174,7 @@ export default function Navbar() {
           </details>
 
           <NavLink to="/contact" className={linkClass} onClick={() => setMenuOpen(false)}>Contact</NavLink>
-
+          <NavLink to="/contact" className={linkClass} onClick={() => setMenuOpen(false)}>Contact</NavLink>
         </div>
       )}
     </nav>
